@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">App 4.1</string>
+    <string name="app_name">Pizza Service</string>
+    <string name="developed_by">Developed by Nikos Epping, 18.10.2021</string>
+    <string name="salami">Salami</string>
+    <string name="thunfisch">Thunfisch</string>
+    <string name="margherita">Margherita</string>
+    <string name="free_choice">Free choice</string>
+    <string name="delivery_address_label">Delivery address:</string>
+    <string name="delivery_address_hint">Input street and number</string>
+    <string name="free_choice_dialog_title">Select your toppings</string>
+    <string name="free_choice_dialog_positive_button">OK</string>
+    <string name="free_choice_dialog_negative_button">ABBRUCH</string>
+    <string name="free_choice_option_salami">Salami</string>
+    <string name="free_choice_option_cheese">Cheese</string>
+    <string name="free_choice_option_anchovis">Anchovis</string>
+    <string name="free_choice_option_ham">Ham</string>
 </resources>
