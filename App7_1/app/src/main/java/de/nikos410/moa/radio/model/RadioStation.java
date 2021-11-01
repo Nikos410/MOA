@@ -1,5 +1,7 @@
 package de.nikos410.moa.radio.model;
 
+import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 
 public class RadioStation {
@@ -12,6 +14,25 @@ public class RadioStation {
         this.name = name;
         this.websiteUrl = websiteUrl;
         this.streamUrl = streamUrl;
+    }
+
+    public Bundle toBundle() {
+
+        final Bundle bundle = new Bundle();
+        bundle.putString("name", getName());
+        bundle.putString("websiteUrl", getWebsiteUrl());
+        bundle.putString("streamUrl", getStreamUrl());
+
+        return bundle;
+    }
+
+    public static RadioStation fromBundle(Bundle bundle) {
+
+        final String name = bundle.getString("name");
+        final String websiteUrl = bundle.getString("websiteUrl");
+        final String streamUrl = bundle.getString("streamUrl");
+
+        return new RadioStation(name, websiteUrl, streamUrl);
     }
 
     public String getName() {
