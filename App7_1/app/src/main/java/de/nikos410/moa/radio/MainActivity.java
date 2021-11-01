@@ -28,10 +28,10 @@ public class MainActivity extends AppCompatActivity {
     private static final List<RadioStation> STATIONS = new LinkedList<>();
 
     static {
-        STATIONS.add(new RadioStation("1Live", "http://www1.wdr.de/radio/1live/index.html", "http://wdr-1live-live.icecast.wdr.de/wdr/1live/live/mp3/128/stream.mp3"));
-        STATIONS.add(new RadioStation("1Live", "http://www1.wdr.de/radio/wdr2/index.html", "http://wdr-wdr2-muensterland.icecast.wdr.de/wdr/wdr2/muensterland/mp3/128/stream.mp3"));
-        STATIONS.add(new RadioStation("DLF", "http://www.deutschlandfunk.de", "https://st01.sslstream.dlf.de/dlf/01/128/mp3/stream.mp3?aggregator=web"));
-        STATIONS.add(new RadioStation("RadioWMW", "http://www.radiowmw.de", "https://radiowmw-ais-edge-4008-fra-dtag-cdn.cast.addradio.de/radiowmw/live/mp3/high"));
+        STATIONS.add(new RadioStation("1Live", "https://www1.wdr.de/radio/1live/index.html", "https://wdr-1live-live.icecast.wdr.de/wdr/1live/live/mp3/128/stream.mp3"));
+        STATIONS.add(new RadioStation("1Live", "https://www1.wdr.de/radio/wdr2/index.html", "https://wdr-wdr2-muensterland.icecast.wdr.de/wdr/wdr2/muensterland/mp3/128/stream.mp3"));
+        STATIONS.add(new RadioStation("DLF", "https://www.deutschlandfunk.de", "https://st01.sslstream.dlf.de/dlf/01/128/mp3/stream.mp3?aggregator=web"));
+        STATIONS.add(new RadioStation("RadioWMW", "https://www.radiowmw.de", "https://radiowmw-ais-edge-4008-fra-dtag-cdn.cast.addradio.de/radiowmw/live/mp3/high"));
     }
 
     private static final String CONTEXT_MENU_START_PLAYING = "Start playing";
