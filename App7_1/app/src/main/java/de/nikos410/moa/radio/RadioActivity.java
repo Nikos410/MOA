@@ -15,7 +15,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.io.IOException;
 
 import de.nikos410.moa.radio.model.RadioStation;
-import de.nikos410.moa.radio.util.ViewUtils;
 
 public class RadioActivity extends AppCompatActivity {
 
@@ -32,7 +31,7 @@ public class RadioActivity extends AppCompatActivity {
         final Bundle bundle = getIntent().getExtras();
         radioStation = RadioStation.fromBundle(bundle);
 
-        webView = ViewUtils.findById(this, R.id.webview, WebView.class);
+        webView = findViewById(R.id.webview);
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {

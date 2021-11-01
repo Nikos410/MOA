@@ -19,7 +19,6 @@ import java.util.List;
 import java.util.logging.Logger;
 
 import de.nikos410.moa.radio.model.RadioStation;
-import de.nikos410.moa.radio.util.ViewUtils;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final ListView stationList = ViewUtils.findById(this, R.id.stationlist, ListView.class);
+        final ListView stationList = findViewById(R.id.stationlist);
 
         stationList.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, STATIONS));
 
