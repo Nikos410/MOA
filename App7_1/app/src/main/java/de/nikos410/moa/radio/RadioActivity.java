@@ -13,14 +13,11 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.IOException;
-import java.util.logging.Logger;
 
 import de.nikos410.moa.radio.model.RadioStation;
 import de.nikos410.moa.radio.util.ViewUtils;
 
 public class RadioActivity extends AppCompatActivity {
-
-    private static final Logger LOG = Logger.getLogger(RadioActivity.class.getSimpleName());
 
     private static MediaPlayer PLAYER;
 
@@ -95,11 +92,8 @@ public class RadioActivity extends AppCompatActivity {
 
     private void stopPlaying() {
 
-        LOG.info("Stopping player.");
         PLAYER.stop();
-        LOG.info("Releasing player.");
         PLAYER.release();
-        LOG.info("Cleaning up.");
         PLAYER = null;
     }
 
