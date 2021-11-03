@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
 
         final ListView stationList = findViewById(R.id.stationlist);
 
-        stationList.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, STATIONS));
+        stationList.setAdapter(new ArrayAdapter<>(this,
+                android.R.layout.simple_list_item_1, STATIONS));
 
         stationList.setOnItemClickListener(
                 (parent, view, position, id) -> {
